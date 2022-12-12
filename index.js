@@ -1,15 +1,30 @@
 function hasTargetSum(array, target) {
   // Write your algorithm here
-}
+ const numbersArray = [];
+  for (const number of array){
+    const result = target-number;
+  if (result in numbersArray)
+  return true;
+  numbersArray[number]=true;
+    
+  }
+    return false;
+
+
+
+  }
+  
+
+
 
 /* 
   Write the Big O time complexity of your function here
 */
 
 /* 
-  Add your pseudocode here
-*/
-
+  hasTargetSum([22, 19, 4, 6, 30], 25)
+iterate through each number in the array
+for the current num identiy a complement that adds to the target(complement = target)
 /*
   Add written explanation of your solution here
 */
